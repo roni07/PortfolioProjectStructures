@@ -1,3 +1,10 @@
+/* Top Section */
+.topScetion {
+    background-color: #E8EAF0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Navigation */
 .navbar-nav .nav-item .nav-link{
     color: black;
@@ -23,4 +30,12 @@
     background-color: #3e64ff;
     color: #ffff;
     border-radius: 50%;
+}
+
+/* Banner */
+
+.banner {
+    text-align: center;
+    width: 100%;
+    padding:150px 0;
 }
