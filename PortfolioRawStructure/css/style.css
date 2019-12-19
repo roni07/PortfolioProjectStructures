@@ -1,0 +1,26 @@
+/* Navigation */
+.navbar-nav .nav-item .nav-link{
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #3e64ff;
+    color: black !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: inline;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    font-size: 26px !important;
+    font-weight: 900 !important;
+}
+
+.a-brand {
+    background-color: #3e64ff;
+    color: #ffff;
+    border-radius: 50%;
+}
