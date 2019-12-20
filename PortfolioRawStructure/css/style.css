@@ -4,6 +4,15 @@ body {
 
 /* Top Section */
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: #fff;
+}
+
 .top-section {
     height: 100vh;
     background: linear-gradient(90deg, #ebf1ff 50%, #ffffff 50%);
@@ -123,6 +132,10 @@ body {
 
 /* About Section*/
 
+.about {
+    margin-bottom: 70px;
+}
+
 .profile-pic {
     min-height: 650px;
     background-image: url("../images/profile_image.jpg");
@@ -182,4 +195,15 @@ body {
 
 .cv-download-btn:hover {
     color: black;
+}
+
+
+/* Platform Section */
+.platform-section {
+    margin-bottom: 200px;
+}
+
+.platform-section-img img{
+    height: auto;
+    max-width: 120px;
 }
