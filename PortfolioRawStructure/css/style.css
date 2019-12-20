@@ -1,18 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Top Section */
-.topScetion {
-    background-color: #E8EAF0;
+
+.top-section {
+    height: 100vh;
+    background: linear-gradient(90deg, #ebf1ff 50%, #ffffff 50%);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* Navigation */
-.navbar-nav .nav-item .nav-link{
+
+.navbar-nav .nav-item .nav-link {
     color: black;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
     border-bottom: 2px solid #3e64ff;
-    color: black !important;
+    color: black;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -21,21 +28,97 @@
     padding-right: 0;
 }
 
-.navbar-brand {
-    font-size: 26px !important;
-    font-weight: 900 !important;
+.roni-nav .brand-logo {
+    font-size: 26px;
+    font-weight: 900;
+    z-index: 1;
 }
 
 .a-brand {
-    background-color: #3e64ff;
+    position: relative;
     color: #ffff;
+}
+
+.a-brand::before {
+    position: absolute;
+    content: "";
+    background-color: #3e64ff;
+    width: 40px;
+    height: 40px;
+    left: -9px;
+    top: -2px;
     border-radius: 50%;
+    z-index: -1;
 }
 
 /* Banner */
 
+
+.banner .first-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: #3e64ff;
+}
+
+.banner .second-text {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.banner .third-text {
+    font-weight: 800;
+}
+
+.banner .third-text .dev-txt {
+    color: #3e64ff;
+}
+
 .banner {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 65px);
+}
+
+.banner .diamond {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    z-index: 11;
+}
+
+.banner .diamond::after {
+    position: absolute;
+    content: "";
     width: 100%;
-    padding:150px 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #edf0ff;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.banner .mouse-wheel {
+    width: 70px;
+    height: 70px;
+}
+
+.arrow {
+    width: 20px;
+    color: #3e64ff;
+    animation: mouse-wheel-animation 4s infinite;
+}
+
+@keyframes mouse-wheel-animation {
+    0% {
+        transform: translateY(10px);
+        color: #3e64ff;
+    }
+    80% {
+        transform: translateY(50px);
+        color: #ff0000;
+    }
+
 }
