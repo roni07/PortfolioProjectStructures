@@ -1,5 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
 }
 
 /* Top Section */
@@ -71,10 +78,12 @@ body {
 .banner .second-text {
     font-size: 60px;
     font-weight: 800;
+    color: #000000;
 }
 
 .banner .third-text {
     font-weight: 800;
+    color: #000000;
 }
 
 .banner .third-text .dev-txt {
@@ -152,6 +161,7 @@ body {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 25px;
+    color: #000000;
 }
 
 .sprit-txt {
@@ -175,6 +185,7 @@ body {
 .project-txt {
     margin-bottom: 24px;
     font-weight: 400;
+    color: #000000;
 }
 
 .project-txt .project-number {
@@ -207,3 +218,234 @@ body {
     height: auto;
     max-width: 120px;
 }
+
+/* Bio Section */
+.bio {
+    display: flex;
+}
+
+.side-bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 165px;
+    align-self: flex-start;
+    flex: .7;
+}
+
+.side-bar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 10px;   
+}
+
+/* education */
+
+.education-content {
+    margin-bottom: 100px;
+}
+
+.bio-contetn-elements {
+    flex: 2;
+}
+
+.bio-content .heading{
+    color: #3e64ff;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.bio-content .resume-icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 11;
+}
+
+.bio-content .book-icon::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #3e64ff;
+    z-index: -1;
+}
+
+.bio-content .book {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-icon {
+    color: #fff;
+}
+
+.bio-content .header-content {
+    display: flex;
+}
+
+.header-content .bio-info {
+    margin-left: 15px;
+}
+
+.bio-info .date {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3e64ff;
+}
+
+.bio-info .degree {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.bio-info .university-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* experience */
+
+.experience-content {
+    margin-bottom: 100px;
+}
+
+/* skills */
+
+.skills-content {
+    margin-bottom: 100px;
+}
+
+.progress-card-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.progress-card h4 {
+    padding: 15px 0;
+    color: #000000;
+    font-weight: 700;
+}
+
+.skills-content {
+    margin-bottom: 100px;
+}
+
+.percentage svg {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    z-index: 1000;
+}
+
+.percentage svg circle{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    fill: none;
+    stroke: #eeeeee;
+    stroke-width: 6;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.percent-cal-one svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #2e7bff;
+}
+
+.percent-cal-two svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #2e7bff;
+}
+
+.percent-cal-three svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+    stroke: #2e7bff;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-content {
+    padding-bottom: 15px;
+}
+
+.progress-content .percentage {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-content .number {
+    position: absolute;
+}
+
+.progress-card {
+    width: 16rem;
+}
+
+.info .text-one {
+    padding-bottom: 0;
+}
+
+.info p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.info { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-progress-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-progress-bar .left, .skill-progress-bar .right {
+    flex: 0.45;
+}
+
+.skill-progress-bar h3{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill-progress-bar .progress-div, .progress-bar-div{
+    height: 12px;
+}
+
+.skill-progress-bar .progress-bar-div {
+    background-color: #3e64ff;
+}
+
