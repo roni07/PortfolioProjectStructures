@@ -455,6 +455,10 @@ body {
 
 /* Services Section */
 
+.services {
+    margin-bottom: 200px;
+} 
+
 .services .service-txt {
     font-weight: 700;
     color: #000000;
@@ -492,7 +496,7 @@ body {
     color: #fff;
 }
 
-.card-content h5 {
+.service-card .card-content h5 {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 3px;
@@ -506,7 +510,7 @@ body {
     margin-bottom: 30px;
 }
 
-.card-content i{
+.service-card .card-content i{
     display: block;
     text-align: center;
     font-size: 60px;
@@ -515,9 +519,139 @@ body {
     margin-bottom: 27px;
 }
 
-.card-content p {
+.service-card .card-content p {
     text-align: center;
     margin-bottom: 25px !important;
 }
 
+/* Projects Section */
+.projects {
+    margin-bottom: 200px;
+}
 
+.project-card {
+    margin-bottom: 80px;
+}
+
+.projects .project-txt {
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.projects .about-our-prject-txt {
+    margin-bottom: 40px;
+}
+
+.projects .project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .project-card .card-content {
+    width: 30rem;
+    height: 24rem;
+    border: none;
+    border-radius: 0;
+}
+
+.projects .project-card .card-content .card-body-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.project-card .card-content h5{
+    font-style: 20px;
+    font-weight: 400;
+    color: #ffffff;    
+}
+
+.project-card .card-content p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #ffffff;    
+    font-weight: 600;   
+}
+
+.project-card .card-content:hover {
+    background: #3e64ff;
+}
+
+.project-card .card-content:hover .card-body-text{
+    opacity: 1;
+}
+
+.project-card .top, .project-card .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card .work-1 {
+    background-image: url("../images/work/w-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card .work-2 {
+    background-image: url("../images/work/w-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card .work-3 {
+    background-image: url("../images/work/w-3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card .work-4 {
+    background-image: url("../images/work/w-4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card .work-5 {
+    background-image: url("../images/work/w-5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card .work-6 {
+    background-image: url("../images/work/w-6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .cmpleted-project-card-content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.projects .cmpleted-project-card-content .card-content{
+    flex: .23;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+ }
+
+ .cmpleted-project-card-content .card-content h3 {
+     font-weight: 700;
+     font-style: 30px;
+     color: #3e64ff;
+ }
+
+ .cmpleted-project-card-content .card-content p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+ }
+
+ .cmpleted-project-card .card-content .card-content-text {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
