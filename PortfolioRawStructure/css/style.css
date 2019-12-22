@@ -314,7 +314,7 @@ body {
 
 .bio-info .university-name {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: #000000;
 }
 
@@ -448,4 +448,76 @@ body {
 .skill-progress-bar .progress-bar-div {
     background-color: #3e64ff;
 }
+
+.bio-section {
+    margin-bottom: 200px;
+}
+
+/* Services Section */
+
+.services .service-txt {
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-our-service-txt {
+    margin-bottom: 40px;
+}
+
+.services .service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .service-card .top, .services .service-card .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card .card-content {
+    flex: .317;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.service-card .card-content:hover{
+    color: #000000;
+    background-color: #3e64ff;
+}
+
+.service-card .card-content:hover i{
+    color: #fff;
+}
+
+.card-content h5 {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-card .top {
+    margin-bottom: 30px;
+}
+
+.card-content i{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    color: #3e64ff;
+    margin-top: 15px;
+    margin-bottom: 27px;
+}
+
+.card-content p {
+    text-align: center;
+    margin-bottom: 25px !important;
+}
+
 
